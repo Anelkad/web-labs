@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>
+            Instagram
+        </title>
+    </head>
+    <style>
+        body {
+            background-color: #fafafa;
+        }
+        .box {
+            background-color: white;
+            position: relative;
+            border: 0.5px solid rgb(216, 216, 216);
+            width: 30%;
+            left: 55%;
+            top: 60px;
+            margin-bottom: 1%;
+            padding-bottom: 1%;
+        }
+        .box .insta{
+            width: 58%;
+            display: block;
+            margin: auto;
+            margin-bottom: 8%;
+            margin-top: 6%
+        }
+        .box a{
+            margin-left: 28%;
+            text-decoration: none;
+            font-size:14px;
+            font-family: 'Segoe UI';
+            font-weight: 600;
+            color: rgb(111, 111, 148);
+        }
+        .box #s{
+            margin: auto;
+            color: rgb(15, 169, 230);
+        }
+        .box p{
+            font-size: 14px;
+            font-family: 'Segoe UI';
+            margin-left: 20%;
+            padding-top: 3%;
+        }
+        #forgot{
+            margin-left: 35%;
+            text-decoration: none;
+            font-size:12px;
+            font-family: 'Segoe UI';
+            font-weight: 400;
+            color: rgb(59, 59, 105);
+        }
+        .box input {
+            display: block;
+            background-color: #fff;
+            margin: auto;
+            margin-bottom: 13px;
+            border: 1px solid rgb(200,200,200);
+            border-radius: 3px;
+            width: 75%;
+            padding: 3% 0 3% 4%;
+            color: rgb(124, 111, 111);
+            font-family: 'Segoe UI';
+            font-size: 12px;
+        }
+        button{
+            border: none;
+            background-color: #5596ec;
+            color: white;
+            margin: auto;
+            margin-bottom: 5%;
+            width: 80%;
+            display: block;
+            border-radius: 5px;
+            padding: 7px 0;
+            font-weight: bold;
+            font-size: 14px;
+            cursor: pointer;
+        }
+        #line{
+            display: block;
+            width: 80%;
+            margin: auto;
+            border-top: 1.5px solid rgb(163, 151, 151);
+            opacity: 0.5;
+            position: relative;
+            z-index:1;
+        }
+        #or {
+            display:block;
+            margin: auto;
+            color:rgb(121, 107, 107);
+            font-weight: 600;
+            margin-top: -3%;
+            font-family: 'Segoe UI';
+            font-size: 13px;
+            background-color: rgb(255, 255, 255);
+            width: 15%;
+            position: relative;
+            text-align: center;
+            z-index:2;
+        }
+
+        #c img{
+            position: relative;
+            left:58%;
+            top: 65px;
+            cursor: pointer;
+        }
+        #c p{
+            position: relative;
+            color: black;
+            font-family: 'Segoe UI';
+            top: 65px;
+            left: 66%;
+            font-size: 14px;
+        }
+        #f{
+            width: 35%;
+            position: absolute;
+            top: 10%;
+            left: 18%;
+        }
+        #f img{
+            width: 100%;
+        }
+         </style>
+    <body>
+        <div class="box">
+            <img src="insta.png" alt="insta" class="insta">
+            <input type="text" placeholder="Email or Phone Number">
+            
+            <input type="password" placeholder="Password">
+           
+            <button type="submit">Log In</button>
+            <div id="line"></div>
+            <div id="or">OR</div>
+            <a href=""><img src="facebook.png" alr="logo" width="15"> Log in with Facebook</a>
+            <a href="" id="forgot">Forgot Password?</a>
+        </div>
+        <div class="box">
+            <p>Don't have an account? <a href="" id="s">Sign up</a></p>
+        </div>
+        <div id="f">
+            <img src="in.jpg" alt="ink">
+        </div>
+
+        <div id="c">
+            <p>Get the app.</p>
+            <span><img src="apple.png" id ="apple" width="128"> <img src="googleplay.png" width="142"></span>
+        </div>
+    </body>
+</html>

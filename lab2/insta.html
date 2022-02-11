@@ -33,7 +33,7 @@
             font-size:14px;
             font-family: 'Segoe UI';
             font-weight: 600;
-            color: rgb(111, 111, 148);
+            color: rgb(58, 89, 156);
         }
         .box #s{
             margin: auto;
@@ -42,7 +42,7 @@
         .box p{
             font-size: 14px;
             font-family: 'Segoe UI';
-            margin-left: 20%;
+            margin-left: 7%;
             padding-top: 3%;
         }
         #forgot{
@@ -51,7 +51,7 @@
             font-size:12px;
             font-family: 'Segoe UI';
             font-weight: 400;
-            color: rgb(59, 59, 105);
+            color: rgb(37, 37, 85);
         }
         .box input {
             display: block;
@@ -106,7 +106,7 @@
 
         #c img{
             position: relative;
-            left:58%;
+            left:0%;
             top: 65px;
             cursor: pointer;
         }
@@ -115,7 +115,7 @@
             color: black;
             font-family: 'Segoe UI';
             top: 65px;
-            left: 66%;
+            left: 20%;
             font-size: 14px;
         }
         #f{
@@ -127,30 +127,103 @@
         #f img{
             width: 100%;
         }
+        #c{
+            position: relative;
+            width:30%;
+            left: 57%;
+        }
+        #lang{
+            position: relative;
+            top: 200px;
+            width:80%;
+            left: 10%;
+            text-align: center;
+            height: 200px;
+        }
+        ul.hr li {
+            display: inline;
+            font-size: 13px;
+            margin-left: 10px;
+            font-family: 'Segoe UI';
+            }
+            .hr a{
+            color: rgb(138, 138, 138); 
+            text-decoration: none;
+            }
+            
+            select{
+                border: none;
+                color: rgb(138, 138, 138); 
+                font-size: 13px;
+                font-family: 'Segoe UI';
+            }
+            span 
+            {
+                color: rgb(138, 138, 138); 
+                font-size: 13px;
+                font-family: 'Segoe UI';
+                margin-left: 20px;
+            }
          </style>
     <body>
         <div class="box">
             <img src="insta.png" alt="insta" class="insta">
-            <form><input type="text" placeholder="Email or Phone Number">
+            <form><input type="text" placeholder="Телефон, имя пользователя или эл. адрес">
             
-            <input type="password" placeholder="Password">
+            <input type="password" placeholder="Пароль">
            
-            <button type="submit">Log In</button></form>
+            <button type="submit">Войти</button></form>
             <div id="line"></div>
-            <div id="or">OR</div>
-            <a href=""><img src="facebook.png" alr="logo" width="15"> Log in with Facebook</a>
-            <a href="" id="forgot">Forgot Password?</a>
+            <div id="or">ИЛИ</div>
+            <a href=""><img src="facebook.png" alr="logo" width="15"> Войти через Facebook</a>
+            <a href="" id="forgot">Забыли пароль?</a>
         </div>
         <div class="box">
-            <p>Don't have an account? <a href="" id="s">Sign up</a></p>
+            <p>У вас еще нет аккаунта? <a href="" id="s">Зарегистрироваться</a></p>
         </div>
         <div id="f">
             <img src="in.jpg" alt="ink">
         </div>
 
         <div id="c">
-            <p>Get the app.</p>
+            <p>Установите приложение.</p>
             <span><img src="apple.png" id ="apple" width="128"> <img src="googleplay.png" width="142"></span>
+        </div>
+        <div id="lang">
+        <ul class="hr">
+            <li><a href="" >Meta</a></li>
+            <li><a href="" >Информация</a></li>
+            <li><a href="" >Блог</a></li>
+            <li><a href="" >Вакансии</a></li>
+            <li><a href="" >Помощь</a></li>
+            <li><a href="" >API</a></li>
+            <li><a href="" >Конфиденциальность</a></li>
+            <li><a href="" >Условия</a></li>
+            <li><a href="" >Популярные аккаунты</a></li>
+            <li><a href="" >Хэштеги</a></li>
+            <li><a href="" >Места</a></li>
+            <li><a href="" >Instagram Lite</a></li>
+            <li><a href="" >Красота</a></li>
+            <li><a href="" >Танцы</a></li>
+            <li><a href="" >Фитнес</a></li>
+            <li><a href="" >Еда и напитки</a></li>
+            <li><a href="" >Дом и сад</a></li>
+            <li><a href="" >Музыка</a></li>
+            <li><a href="" >Изобразительное искусство</a></li>
+            </ul>
+            <select><option>Русский</option>
+                <option>English</option>
+                <option>Türkçe</option>
+                <option>Bahasa Indonesia</option>
+                <option>中文(简体)</option>
+                <option>Қазақша</option>
+                <option>Deutsch</option>
+                <option>한국어</option>
+                <option>Shqip</option>
+                <option>Español</option>
+                <option>Português (Brasil)</option>
+            </select>
+            <span>© 2022 Instagram from Meta</span>
         </div>
     </body>
 </html>

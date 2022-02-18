@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>
+            to do list
+        </title>
+    </head>
+    <style>
+        body{
+            text-align: center;
+        }
+        h1{
+            color:aliceblue;
+            background-color: rgb(46, 46, 46);
+            font-size: 24px;
+            padding: 10px 0;
+            margin-bottom: 20px;
+        }
+        div{
+            position: relative;
+            display: block;
+            margin: auto;
+            width: 30%;
+            border: 2px solid rgb(194, 194, 194);
+            padding: 3px 0;
+            
+        }
+        button{
+            background-color: rgb(251, 246, 246);
+            border:1px solid rgb(199, 199, 199);
+            color:rgb(121, 95, 95);
+        }
+        #add{
+            background-color: rgb(107, 107, 175);
+            color:white;
+            padding: 3px 5px;
+            border-radius: 5px;
+        }
+        #myInput{
+            margin: 5px;
+        }
+        p{
+            position: relative;
+            margin: 20px 0;
+            left: -12%;
+            color:rgb(73, 73, 73);
+            font-size: 25px;
+        }
+        input:checked+div{
+            text-decoration: overline;
+        }
+        .close{
+            position: relative;
+            border: none;
+            float: right;
+        }
+        input:checked + label{
+            text-decoration: line-through;
+        }
+
+    </style>
+    <body>
+        <h1>ToDo List</h1><p>To Do List</p>
+        <input type="text" id="myInput" placeholder="Write something"><button id="add" onclick="newElement()">Add</button>
+        <div><input type="checkbox"><label>first</label><button class="close">×</button></div>
+        <div><input type="checkbox"><label>second</label><button class="close">×</button></div>
+        <div><input type="checkbox"><label>third</label><button class="close">×</button></div>
+    </body>
+    <script>
+
+        var cl = document.getElementsByClassName("close");
+        var int;
+        for (int = 0; int < cl.length; int++) {
+            cl[int].onclick = function() {
+            var d = this.parentElement;
+            d.style.display = "none";
+            }
+            }
+
+        function newElement() {
+        var all = document.querySelector("body");
+        var i = document.createElement("div");
+        var inputValue = document.getElementById("myInput").value;
+        
+        var check = document.createElement("input");
+        check.type="checkbox";
+        i.appendChild(check);
+        
+        if (inputValue === '') {
+        alert("You must write something!");
+        } else {
+        var newlabel = document.createElement("Label");
+        newlabel.innerText=inputValue;
+        i.appendChild(newlabel);
+        
+        var btn = document.createElement("button");
+        btn.innerText="×";
+        btn.className="close";
+        
+        i.appendChild(btn);
+        all.appendChild(i);
+
+        for (int = 0; int < cl.length; int++) {
+            cl[int].onclick = function() {
+            var d = this.parentElement;
+            d.style.display = "none";
+            }
+            }
+        }
+        }
+    </script>
+</html>

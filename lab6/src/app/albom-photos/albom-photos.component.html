@@ -1,0 +1,5 @@
+<button (click)="goBack()">Go Back</button><br>
+<div *ngIf="loaded">
+    <img *ngFor="let photo of photos" src="{{photo.url}}">
+</div>
+<p *ngIf="!loaded">Loading photos..</p>

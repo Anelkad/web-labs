@@ -1,0 +1,9 @@
+<fieldset>
+    <input type="text" [(ngModel)]="newAlbom">
+    <button (click)="addAlbom()">Add</button>
+</fieldset>
+<ul *ngIf="loaded">
+    <li *ngFor="let albom of alboms"><a routerLink="/alboms/{{albom.id}}">{{albom.id}}: {{albom.title}}</a>
+    <button (click)="deleteAlbom(albom.id)">-</button></li>
+</ul>
+<p *ngIf="!loaded">Loading albom list...</p>

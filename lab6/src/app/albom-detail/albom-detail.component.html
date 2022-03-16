@@ -1,0 +1,9 @@
+<div *ngIf="loaded">
+    <h3>UserId: {{albom.userId}}<br> AlbomId: {{albom.id}}</h3>
+    <input type="text" [(ngModel)]="albom.title">
+    <br><button (click)="updateAlbom()">Save</button>
+    <br><button routerLink="/alboms/{{albom.id}}/photos">Photos!</button>
+    <br><button (click)="goBack()">Go Back</button>
+    
+</div>
+<p *ngIf="!loaded">Loading albom...</p>
